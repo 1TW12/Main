@@ -1,0 +1,30 @@
+<head>
+  <src>head-script.js</src>
+  <meta charset="UTF-8">
+  <link rel='icon' href="https://www.google.com/imgres?q=password%20game&imgurl=https%3A%2F%2Fneal.fun%2Fshare-cards%2Fpassword-game.png%3Fv%3D2&imgrefurl=https%3A%2F%2Fneal.fun%2Fpassword-game%2F&docid=g9RetSyDbhSe9M&tbnid=G66IdDrFYiDKPM&vet=12ahUKEwi5zJTEyuCFAxWrD1kFHbwaA4MQM3oECC0QAA..i&w=1200&h=630&hcb=2&ved=2ahUKEwi5zJTEyuCFAxWrD1kFHbwaA4MQM3oECC0QAA">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+
+  <!-- import here -->
+
+  <script>
+    window.onload=function(){
+      if (window.innerWidth<700){
+        //small
+        document.getElementById("navItemContainer").style.display="none"
+        document.getElementById("menuToggle").addEventListener("click",function(){
+        if (navMenuShown) document.getElementById("navItemContainer").style.display="none"
+        else document.getElementById("navItemContainer").style.display="";
+        navMenuShown=!navMenuShown;
+        })
+      }
+      resize();
+    }
+  </script>
+  <style>
+    html{
+      scroll-behavior:smooth;
+    }
+  </style>
+</head>
